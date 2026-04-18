@@ -1,0 +1,28 @@
+{
+  "name": "@app/bot",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "check-types": "tsc --noEmit",
+    "test": "jest",
+    "deploy-commands": "dotenv -e ../../.env -- tsx scripts/deployCommands.ts"
+  },
+  "dependencies": {
+    "hono": "4.10.3",
+    "@hono/node-server": "1.13.7",
+    "tweetnacl": "1.0.3",
+    "discord-api-types": "0.38.44"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "tsx": "catalog:",
+    "jest": "29.7.0",
+    "ts-jest": "29.2.6",
+    "@types/jest": "29.5.14"
+  }
+}
