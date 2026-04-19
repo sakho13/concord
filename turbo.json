@@ -24,6 +24,10 @@
         "DISCORD_BOT_TOKEN",
         "DISCORD_GUILD_ID"
       ]
+    },
+    "deploy-commands": {
+      "cache": false,
+      "env": ["DISCORD_APP_ID", "DISCORD_BOT_TOKEN", "DISCORD_GUILD_ID"]
     }
   }
 }
